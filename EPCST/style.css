@@ -1,0 +1,105 @@
+/* Basic styling for the website */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  float: left;
+  margin-right: 10px;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+header {
+  background-color: #B1E66B;
+  color: #fff;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+/* Align the school name to the left */
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.schoolname {
+  text-align: left;
+  padding-left: 20px; /* Add padding as needed for spacing */
+  font-size: 25px;
+  color: black;
+}
+.schoolname2 {
+  text-align: left;
+  padding-left: 20px; /* Add padding as needed for spacing */
+  font-size: 20px;
+  color: black;
+  font-weight: 100%;
+}
+header h1 {
+  margin: 0;
+  color: black;
+}
+.container {
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  background-color: #4A8100;
+  overflow: auto;
+}
+
+/* Style the navigation menu */
+.navigation {
+  list-style: none; /* Remove list bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+  
+  
+}
+
+/* Style each navigation item (list item) */
+.nav-item {
+  margin-right: 20px; /* Adjust the margin as needed for spacing */
+}
+
+/* Align the navigation items to the right */
+.container {
+  justify-content: flex-end;
+}
+
+/* Style the navigation links */
+.nav-item a {
+  text-decoration: none; /* Remove underlines from links */
+  color: white; /* Set the text color to white or your desired color */
+  font-weight: bold;
+  font-size: 16px;
+}
+.body-background{
+  clip-path: polygon(35% 0%, 100% 0%, 100% 100%, 35% 100%, 50% 50%);
+  background-image: url(img/NPB-0008.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  position: relative;
+  
+}
+.background{
+  background-color: #FFFDD9;
+  height: 1000px;
+  box-sizing: border-box;
+  position: relative;
+}
