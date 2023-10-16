@@ -1,57 +1,130 @@
-/* Basic styling for the website */
 body {
-  font-family: Arial, sans-serif;
+font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .logo {
-  float: left;
-  margin-right: 10px;
+z-index: 1;
+  flex: absolute;
+float: left;
+margin-left: 100px;
+  background: #fff;
 }
 
 .logo img {
-  width: 150px;
-  height: auto;
-  margin-left: 50px;
-  margin-top: 100px;
+width: 230px;
+  padding-top: 180px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
 
 header {
-  background-color: #B1E66B;
-  color: #fff;
-  padding: 1px;
-  display: flex;
+background-color: #B1E66B;
+display: flex;
   align-items: center;
-  height: 100px;
+justify-content: space-between;
+height: 100px;
+color: #fff;
 }
 
 /* Align the school name to the left */
 .header-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+width: 100%;
+display: flex;
+justify-content: space-between;
 }
 
 .schoolname {
-  text-align: left;
-  padding-left: 20px; /* Add padding as needed for spacing */
-  font-size: 25px;
+padding-left: 20px;
+  /* Add padding as needed for spacing */
+  padding-top: 20px;
+  font-size: 40px;
   color: black;
 }
+
 .schoolname2 {
-  text-align: left;
-  padding-left: 20px; /* Add padding as needed for spacing */
-  font-size: 20px;
-  color: black;
-  font-weight: 100%;
-}
-header h1 {
+padding-left: 20px;
+  /* Add padding as needed for spacing */
   margin: 0;
+  font-size: 26px;
   color: black;
 }
+
+/* start search style */
+.flexbox {
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  margin: 20px;
+}
+
+.search>h3 {
+  font-weight: normal;
+}
+
+.search>h1,
+.search>h3 {
+  color: rgba(48, 46, 46, 0.774);
+  margin-bottom: 15px;
+}
+
+.search>div {
+  display: inline-block;
+  position: relative;
+}
+
+.search>div:after {
+  content: "";
+  background: whitesmoke;
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  top: 40px;
+  right: 2px;
+  transform: rotate(135deg);
+}
+
+.search>div>input {
+  color: black;
+  font-size: 16px;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border: solid 3px whitesmoke;
+  outline: none;
+  border-radius: 35px;
+  transition: width 0.5s;
+}
+
+.search>div>input::placeholder {
+  color: rgba(45, 44, 44, 0.771);
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+
+.search>div>input:focus::placeholder {
+  opacity: 1;
+}
+
+.search>div>input:focus,
+.search>div>input:not(:placeholder-shown) {
+  width: 250px;
+}
+/* end search style */
+header h1 {
+margin: 0;
+  color: black;
+}
+
 .container {
-  width: 100%;
+z-index: 0;
+width: 100%;
   height: 100px;
   box-sizing: border-box;
   justify-content: flex-end;
@@ -59,47 +132,93 @@ header h1 {
   overflow: auto;
 }
 
-/* Style the navigation menu */
+/* Start of style the navigation menu */
 .navigation {
-  list-style: none; /* Remove list bullet points */
+list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: flex-end;
   margin-top: 50px;
-  
-  
 }
 
 /* Style each navigation item (list item) */
 .nav-item {
-  margin-right: 20px; /* Adjust the margin as needed for spacing */
-}
-
-/* Align the navigation items to the right */
-.container {
-  justify-content: flex-end;
+margin-right: 20px;
+  position: relative;
+  /* Add this line to make sure ::after pseudo-element positions properly */
 }
 
 /* Style the navigation links */
 .nav-item a {
-  text-decoration: none; /* Remove underlines from links */
-  color: white; /* Set the text color to white or your desired color */
+text-decoration: none;
+  color: white;
   font-weight: bold;
   font-size: 16px;
+position: relative;
 }
-.body-background{
+
+/* Add a line beneath the navigation item when hovered */
+.nav-item a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: whitesmoke;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.nav-item a:hover::after {
+  width: 100%;
+}
+/* End of style the navigation menu */
+
+.background {
+  z-index: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
   clip-path: polygon(35% 0%, 100% 0%, 100% 100%, 35% 100%, 50% 50%);
   background-image: url(img/NPB-0008.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1000px;
-  position: relative;
-  
 }
-.background{
-  background-color: #FFFDD9;
-  height: 1000px;
-  box-sizing: border-box;
-  position: relative;
+
+.info {
+  z-index: 1;
+  position: absolute;
+  top: 60%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  text-align: left;
+  max-width: 50%;
+}
+.info p:first-child {
+  font-size: 34px;
+  margin: 10px 0;
+}
+.info p:nth-child(2) {
+  font-size: 54px;
+  margin: 10px 0;
+}
+
+.line::after {
+  content: "";
+  display: block;
+  border-top: 1px solid black;
+  margin-top: 5px;
+}
+
+.info button {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 18px;
+  cursor: pointer;
 }
