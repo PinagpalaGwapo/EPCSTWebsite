@@ -4,7 +4,7 @@
 body {
 font-family: Arial, sans-serif;
 margin: 0;
-  padding: 0;
+padding: 0;
 }
 
 .logo {
@@ -18,7 +18,7 @@ background: #fff;
 .logo img {
 width: 230px;
 padding-top: 180px;
-  padding-left: 10px;
+padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
 }
@@ -32,7 +32,7 @@ height: 100px;
 color: #fff;
 }
 header h1 {
-  margin: 0;
+margin: 0;
   color: black;
 }
 
@@ -46,7 +46,7 @@ justify-content: space-between;
 .schoolname {
 padding-left: 20px;
 /* Add padding as needed for spacing */
-  padding-top: 20px;
+padding-top: 20px;
   font-size: 40px;
   color: black;
 }
@@ -54,7 +54,7 @@ padding-left: 20px;
 .schoolname2 {
 padding-left: 20px;
 /* Add padding as needed for spacing */
-  margin: 0;
+margin: 0;
   font-size: 26px;
   color: black;
 }
@@ -62,7 +62,7 @@ padding-left: 20px;
 /* start search style */
 .flexbox {
 margin-right: 10px;
-  justify-content: center;
+justify-content: center;
   align-items: center;
 }
 
@@ -77,17 +77,17 @@ font-weight: normal;
 .search>h1,
 .search>h3 {
 color: rgba(48, 46, 46, 0.774);
-  margin-bottom: 15px;
+margin-bottom: 15px;
 }
 
 .search>div {
 display: inline-block;
-  position: relative;
+position: relative;
 }
 
 .search>div:after {
 content: "";
-  background: whitesmoke;
+background: whitesmoke;
   width: 4px;
   height: 20px;
   position: absolute;
@@ -98,7 +98,7 @@ content: "";
 
 .search>div>input {
 color: black;
-  font-size: 16px;
+font-size: 16px;
   background: transparent;
   width: 25px;
   height: 25px;
@@ -111,7 +111,7 @@ color: black;
 
 .search>div>input::placeholder {
 color: rgba(45, 44, 44, 0.771);
-  opacity: 0;
+opacity: 0;
   transition: opacity 150ms ease-out;
 }
 
@@ -130,7 +130,7 @@ width: 250px;
 z-index: 0;
 width: 100%;
 height: 100px;
-  box-sizing: border-box;
+box-sizing: border-box;
   justify-content: flex-end;
   background-color: #4A8100;
   overflow: auto;
@@ -140,7 +140,7 @@ height: 100px;
 .navigation {
 list-style: none;
 padding: 0;
-  margin: 0;
+margin: 0;
   display: flex;
   justify-content: flex-end;
   margin-top: 50px;
@@ -150,14 +150,14 @@ padding: 0;
 .nav-item {
 margin-right: 20px;
 position: relative;
-  /* Add this line to make sure ::after pseudo-element positions properly */
+/* Add this line to make sure ::after pseudo-element positions properly */
 }
 
 /* Style the navigation links */
 .nav-item a {
 text-decoration: none;
 color: white;
-  font-weight: bold;
+font-weight: bold;
   font-size: 20px;
 position: relative;
 }
@@ -165,7 +165,7 @@ position: relative;
 /* Add a line beneath the navigation item when hovered */
 .nav-item a::after {
 content: "";
-  display: block;
+display: block;
   width: 0;
   height: 2px;
   background-color: whitesmoke;
@@ -182,9 +182,9 @@ width: 100%;
 
 .background {
 height: 100vh;
-  box-sizing: border-box;
+box-sizing: border-box;
 /* position: relative; */
-  clip-path: polygon(35% 0%, 100% 0%, 100% 100%, 35% 100%, 50% 50%);
+clip-path: polygon(35% 0%, 100% 0%, 100% 100%, 35% 100%, 50% 50%);
   background-image: url(img/NPB-0008.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -193,7 +193,7 @@ height: 100vh;
 .info {
 position: absolute;
 top: 70%;
-  left: 28%;
+left: 28%;
   transform: translate(-50%, -50%);
   padding: 10px;
   text-align: left;
@@ -202,7 +202,7 @@ line-height: 1vh;
 }
 .info p:first-child {
 color: #000;
-  font-family: Krona One;
+font-family: Krona One;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -210,7 +210,7 @@ color: #000;
 }
 .info p:nth-child(2) {
 color: #69B800;
-  font-family: Black Ops One;
+font-family: Black Ops One;
   font-size: 85px;
   font-style: normal;
   font-weight: 400;
@@ -219,11 +219,11 @@ color: #69B800;
 }
 
 .info p:nth-child(3) {
-  width: 50%;
+width: 50%;
 }
 
 .info p:nth-child(4) {
-  color: #000;
+color: #000;
   text-align: justify;
   font-family: Arimo;
   font-size: 20px;
@@ -235,21 +235,21 @@ color: #69B800;
 
 .line::after {
 content: "";
-  display: block;
+display: block;
   border-top: 1px solid black;
   margin-top: 5px;
 }
 
 .button_div {
-  display: flex;
+display: flex;
   width: 40%;
   justify-content: space-between;
 }
 
 .info button:first-child {
-  border: none;
+border: none;
 font-size: large;
-  font-family: Arimo;
+font-family: Arimo;
   width: 45%;
   height: 55px;
   flex-shrink: 0;
@@ -258,7 +258,7 @@ font-size: large;
 }
 
 .info button:nth-child(2) {
-  border: none;
+border: none;
   font-size: large;
   font-family: Arimo;
   width: 45%;
@@ -268,27 +268,57 @@ font-size: large;
   background: #CC1717;
 }
 
-
-/* Search bar styles for smaller screens (mobile) */
-@media (max-width: 767px) {
-  .flexbox {
-    margin-right: 0;
+/* Media query for mobile and tablet screens */
+@media (max-width: 1023px) {
+  .logo {
+    /* Hide the logo on mobile and tablet screens */
+    display: none;
   }
 
-  .search {
-    margin: 10px;
+                                .schoolname {
+                                  font-size: 28px;
+                                  /* Adjust font size for tablet screens */
+                                }
+                
+                                .schoolname2 {
+                                  font-size: 20px;
+                                  /* Adjust font size for tablet screens */
+                                }
+                
+                                .info {
+                                  max-width: 80%;
+                                  margin-top: 10%;
+                                  margin-left: 5%;
+                                  /* Adjust the max-width for tablet screens */
+                                }
+                
+                                .info p:first-child {
+                                  font-size: 14px;
+                                  /* Adjust font size for the first paragraph */
+                                }
+
+.info p:nth-child(2) {
+  font-size: 24px;
+  /* Adjust font size for the second paragraph */
 }
 
-.search>h1,
-.search>h3 {
-  font-size: 16px;
+.info p:nth-child(3) {
+  width: 20%;
 }
 
-.search>div::after {
-  top: 20px;
+.info p:nth-child(4) {
+  width: 70%;
+  /* Adjust the width for the fourth paragraph */
+  font-size: 12px;
+  /* Adjust font size for the fourth paragraph */
 }
 
-.search>div>input {
-  font-size: 14px;
+.info button:first-child,
+.info button:nth-child(2) {
+  width: 40%;
+  /* Adjust the width of the buttons */
+  height: 30px;
+  /* Adjust the height of the buttons */
+  font-size: small;
 }
 }
