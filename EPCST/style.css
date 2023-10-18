@@ -326,3 +326,29 @@ width: 40%;
   font-size: small;
 }
 }
+
+/* Experiment Phase- Media queries */
+/* Ok na yan media queries yon content nalang i-aadjust*/
+
+
+
+@media (width <= 600px) {
+  body{
+    /*dito na magisismula pahirap*/
+    background-color: black;
+  }
+}
+
+@media (width > 800px) {
+  body{
+    /*dito na magisismula pahirap*/
+    background-color: #CC1717;
+  }
+}
+
+@media (width > 900px) {
+  body{
+    /*dito na magisismula pahirap*/
+    background-color: #17cc72;
+  }
+}
