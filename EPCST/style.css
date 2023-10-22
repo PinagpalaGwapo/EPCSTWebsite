@@ -1,225 +1,192 @@
 @import url('https://fonts.googleapis.com/css?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Arimo&display=swap');
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.logo {
-z-index: 1;
-flex: absolute;
-float: left;
-margin-left: 100px;
-background: #fff;
-}
-
-.logo img {
-width: 230px;
-padding-top: 180px;
-padding-left: 10px;
-padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-header {
-background-color: #B1E66B;
-display: flex;
-align-items: center;
-justify-content: space-between;
-height: 100px;
-color: #fff;
-}
-header h1 {
-margin: 0;
-color: black;
-}
-
-/* Align the school name to the left */
-.header-content {
-width: 100%;
-display: flex;
-justify-content: space-between;
-}
-
-.schoolname {
-padding-left: 20px;
-/* Add padding as needed for spacing */
-padding-top: 20px;
-font-size: 40px;
-  color: black;
-}
-
-.schoolname2 {
-padding-left: 20px;
-/* Add padding as needed for spacing */
-margin: 0;
-font-size: 26px;
-  color: black;
-}
-
-/* start search style */
-.flexbox {
-margin-right: 10px;
-justify-content: center;
-align-items: center;
-}
-
-.search {
-margin: 20px;
-}
-
-.search>h3 {
-font-weight: normal;
-}
-
-.search>h1,
-.search>h3 {
-color: rgba(48, 46, 46, 0.774);
-margin-bottom: 15px;
-}
-
-.search>div {
-display: inline-block;
-position: relative;
-}
-
-.search>div:after {
-content: "";
-background: whitesmoke;
-width: 4px;
-  height: 20px;
-  position: absolute;
-  top: 40px;
-  right: 2px;
-  transform: rotate(135deg);
-}
-
-.search>div>input {
-color: black;
-font-size: 16px;
-background: transparent;
-  width: 25px;
-  height: 25px;
-  padding: 10px;
-  border: solid 3px whitesmoke;
-  outline: none;
-  border-radius: 35px;
-  transition: width 0.5s;
-}
-
-.search>div>input::placeholder {
-color: rgba(45, 44, 44, 0.771);
-opacity: 0;
-transition: opacity 150ms ease-out;
-}
-
-.search>div>input:focus::placeholder {
-opacity: 1;
-}
-
-.search>div>input:focus,
-.search>div>input:not(:placeholder-shown) {
-width: 250px;
-}
-/* end search style */
 
 
-.container {
-z-index: 0;
-width: 100%;
-height: 100px;
-box-sizing: border-box;
-justify-content: flex-end;
-  background-color: #4A8100;
-  overflow: auto;
-}
-
-/* Start of style the navigation menu */
-.navigation {
-list-style: none;
+*{
+color: #000;
 padding: 0;
 margin: 0;
-display: flex;
-  justify-content: flex-end;
-  margin-top: 50px;
-}
-
-/* Style each navigation item (list item) */
-.nav-item {
-margin-right: 20px;
-position: relative;
-/* Add this line to make sure ::after pseudo-element positions properly */
-}
-
-/* Style the navigation links */
-.nav-item a {
 text-decoration: none;
-color: white;
+list-style: none;
+box-sizing: border-box;
+}
+body{
+font-family: Arial, sans-serif;
 font-weight: bold;
-font-size: 20px;
-position: relative;
 }
-
-/* Add a line beneath the navigation item when hovered */
-.nav-item a::after {
-content: "";
+/* logo start */
+.container {
+display: flex;
+justify-content: space-between;
+background-color: #7cd902;
+width: 100%;
+height: 60px;
+}
+.logo {
 display: block;
-width: 0;
-  height: 2px;
-  background-color: whitesmoke;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: width 0.3s;
+margin-left: 80px;
+}
+img {
+background-color: #fff;
+padding: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+/* logo end */
+
+/* school name start */
+.school_container {
+display: flex;
+}
+.school {
+margin-left: 12px;
+}
+.school_name {
+font-size: 28px;
+}
+.school_name2 {
+font-size: 20px;
+}
+/* school name end */
+
+
+/* search start */
+.search {
+display: flex;
+align-items: center;
+margin-right: 30px;
 }
 
-.nav-item a:hover::after {
+.search-container {
+display: flex;
+background: #fff;
+border-radius: 6px;
+padding: 5px;
+}
+
+.search-container input[type="text"] {
+border: none;
+outline: none;
+flex-grow: 1;
+padding: 0 10px;
+}
+
+.search-container button {
+border: none;
+cursor: pointer;
+padding: 5px 10px;
+}
+
+.search-container i {
+color: #dcdada; 
+}
+/* search end */
+
+/* nav start */
+nav {
+background-color: #4A8100;
+height: 150px;
 width: 100%;
 }
-/* End of style the navigation menu */
+nav ul {
+float: right;
+margin-right: 20px;
+}
+nav ul li {
+display: inline-block;
+line-height: 80px;
+margin: 0 5px;
+}
+nav ul li a {
+color: white;
+font-size: 17px;
+padding: 7px 13px;
+border-radius: 3px;
+text-transform: uppercase;
+position: relative;
+transition: 0.5s;
+}
+nav ul li a::before {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0; 
+height: 2px; 
+background: #fff; 
+transition: width 0.5s; 
+}
+nav ul li a:hover::before {
+width: 100%; 
+}
+nav ul li a:hover {
+background: none;
+}
+/* nav end   */
 
-.background {
-height: 100vh;
-box-sizing: border-box;
-/* position: relative; */
-clip-path: polygon(35% 0%, 100% 0%, 100% 100%, 35% 100%, 50% 50%);
-background-image: url(img/NPB-0008.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+/* check start */
+.checkbtn{
+font-size: 30px;
+color: white;
+float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+#check{
+display: none;
+}
+/* check end */
+
+/* home start */
+section {
+    position: relative;
+}
+
+.home-background {
+    width: 100%; /* Ensure the image covers the entire width */
+    height: auto; /* Adjust the height as needed */
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(35% 0%, 100% 0%, 100% 100%, 35% 100%, 50% 50%);
+    margin: 0px;
+    padding: 0px;
 }
 
 .info {
-position: absolute;
-top: 70%;
-left: 28%;
-transform: translate(-50%, -50%);
-  padding: 10px;
-  text-align: left;
-  max-width: 50%;
-line-height: 1vh;
+    margin-top: 16%;
+    padding: 20px;
+    max-width: 80%;
+    position: absolute;
+    z-index: 1; 
 }
+
+.info p {
+color: #000;
+font-family: Krona One;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+margin: 10px 0;
+}
+
 .info p:first-child {
 color: #000;
 font-family: Krona One;
 font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 0%;
+font-style: normal;
+font-weight: 400;
 }
+
 .info p:nth-child(2) {
 color: #69B800;
 font-family: Black Ops One;
 font-size: 85px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 0%;
-  letter-spacing: 4.25px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 4.25px;
 }
 
 .info p:nth-child(3) {
@@ -229,25 +196,39 @@ width: 50%;
 .info p:nth-child(4) {
 color: #000;
 text-align: justify;
-  font-family: Arimo;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: normal;
-  width: 60%;
+font-family: Arimo;
+font-size: 20px;
+font-style: italic;
+font-weight: 400;
+width: 60%;
 }
-
 .line::after {
 content: "";
 display: block;
-border-top: 1px solid black;
-  margin-top: 5px;
+border-top: 3px solid black;
+margin-top: 5px;
+}
+
+.button_div {
+display: flex;
+justify-content: space-around;
+margin: 20px 0;
+}
+
+.info button {
+border: none;
+font-size: large;
+font-family: Arimo;
+width: 45%;
+height: 55px;
+flex-shrink: 0;
+border-radius: 10px;
 }
 
 .button_div {
 display: flex;
 width: 40%;
-  justify-content: space-between;
+justify-content: space-between;
 }
 
 .info button:first-child {
@@ -255,100 +236,106 @@ border: none;
 font-size: large;
 font-family: Arimo;
 width: 45%;
-  height: 55px;
-  flex-shrink: 0;
-  border-radius: 10px;
-  background: #579504;
+height: 55px;
+flex-shrink: 0;
+border-radius: 10px;
+background: #579504;
 }
 
 .info button:nth-child(2) {
 border: none;
 font-size: large;
-  font-family: Arimo;
-  width: 45%;
-  height: 55px;
-  flex-shrink: 0;
-  border-radius: 10px;
-  background: #CC1717;
+font-family: Arimo;
+width: 45%;
+height: 55px;
+flex-shrink: 0;
+border-radius: 10px;
+background: #CC1717;
 }
+/* home end */
+
 
 /* Media query for mobile and tablet screens */
-@media (max-width: 1023px) {
+@media (max-width: 1023px) {    
 .logo {
-    /* Hide the logo on mobile and tablet screens */
-    display: none;
-  }
-
-.schoolname {
-  font-size: 28px;
-  /* Adjust font size for tablet screens */
+display: none;
+}
+.container {
+    justify-content: space-between;
 }
 
-.schoolname2 {
-  font-size: 20px;
-  /* Adjust font size for tablet screens */
+.school_name {
+    font-size: 25px;
 }
-
+.school_name2 {
+    font-size: 18px;
+}
 .info {
-  max-width: 80%;
-  margin-top: 10%;
-  margin-left: 5%;
-  /* Adjust the max-width for tablet screens */
+    margin-top: 10%; 
 }
 
-.info p:first-child {
-  font-size: 14px;
-  /* Adjust font size for the first paragraph */
+.info p {
+    font-size: 20px;
 }
 
 .info p:nth-child(2) {
-font-size: 24px;
-  /* Adjust font size for the second paragraph */
-}
-
-.info p:nth-child(3) {
-width: 20%;
+    font-size: 40px;
 }
 
 .info p:nth-child(4) {
-width: 70%;
-  /* Adjust the width for the fourth paragraph */
-  font-size: 12px;
-  /* Adjust font size for the fourth paragraph */
+    font-size: 16px;
 }
 
-.info button:first-child,
-.info button:nth-child(2) {
-width: 40%;
-  /* Adjust the width of the buttons */
-  height: 30px;
-  /* Adjust the height of the buttons */
-  font-size: small;
+.button_div {
+    margin: 10px 0;
+}
+
+.info button {
+    font-size: medium; 
+    height: 45px; 
 }
 }
 
-/* Experiment Phase- Media queries */
-/* Ok na yan media queries yon content nalang i-aadjust*/
-
-
-
-@media (width <= 600px) {
-  body{
-    /*dito na magisismula pahirap*/
-    background-color: black;
-  }
+@media (max-width: 858px){
+.search-container input[type="text"] {
+    display: none;
 }
-
-@media (width > 800px) {
-  body{
-    /*dito na magisismula pahirap*/
-    background-color: #CC1717;
-  }
+.checkbtn{
+display: block;
 }
-
-@media (width > 900px) {
-  body{
-    /*dito na magisismula pahirap*/
-    background-color: #17cc72;
-  }
+.school {
+    margin-top: 6px;
+}
+.school_name {
+font-size: 16px;
+}
+.school_name2 {
+    font-size: 12px;
+}
+ul{
+z-index: 1;
+position: fixed;
+width: 100%;
+height: 100vh;
+background: #4A8100;
+top: 130px;
+left: -100%;
+text-align: center;
+transition: all .5s;
+}
+nav ul li{
+display: block;
+margin: 50px 0;
+line-height: 30px;
+}
+nav ul li a{
+font-size: 20px;
+}
+a:hover,a.active{
+background: none;
+color: #fff;    
+}
+#check:checked ~ ul{
+left: 0;
+}
 }
