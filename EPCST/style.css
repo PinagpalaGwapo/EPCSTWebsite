@@ -38,13 +38,13 @@ border-bottom-left-radius: 10px;
 .school_container {
 display: flex;
 }
-.school {
+.school-nav {
 margin-left: 12px;
 }
-.school_name {
+.school-name-nav {
 font-size: 28px;
 }
-.school_name2 {
+.school-name-nav2 {
 font-size: 20px;
 }
 /* school name end */
@@ -219,7 +219,7 @@ border: none;
 font-size: large;
 font-family: Arimo;
 width: 45%;
-height: 55px;
+height: 30%;
 flex-shrink: 0;
 border-radius: 10px;
 }
@@ -262,11 +262,21 @@ display: none;
 .container {
     justify-content: space-between;
 }
+.home-background {
+    height: 90vh;
+}
 
-.school_name {
+.school-name-nav {
+font-size: 24px;
+}
+.school-name-nav2 {
+font-size: 18px;
+}
+
+.school-name {
     font-size: 25px;
 }
-.school_name2 {
+.school-name2 {
     font-size: 18px;
 }
 .info {
@@ -285,34 +295,54 @@ display: none;
     font-size: 16px;
 }
 
-.button_div {
-    margin: 10px 0;
-}
-
-.info button {
-    font-size: medium; 
-    height: 45px; 
-}
 }
 
 @media (max-width: 858px){
+#home {
+    display: flex;
+    justify-content: center; 
+}   
+.info p:nth-child(3) {
+    width: 100%;
+}
+.info p:nth-child(4) {
+    width: 100%;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.button_div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .search-container input[type="text"] {
     display: none;
 }
 .checkbtn{
 display: block;
 }
-.school {
-    margin-top: 6px;
+.school-nav {
+margin-top: 6px;
 }
-.school_name {
+.school-name-nav {
+font-size: 18px;
+}
+.school-name-nav2 {
 font-size: 16px;
 }
-.school_name2 {
+.school-name {
+font-size: 16px;
+}
+.school-name2 {
     font-size: 12px;
 }
 ul{
-z-index: 1;
+z-index: 2;
 position: fixed;
 width: 100%;
 height: 100vh;
@@ -330,6 +360,10 @@ line-height: 30px;
 nav ul li a{
 font-size: 20px;
 }
+.button_div:first-child, a {
+    margin: 0px;
+    font-size: small;
+}
 a:hover,a.active{
 background: none;
 color: #fff;    
@@ -337,4 +371,4 @@ color: #fff;
 #check:checked ~ ul{
 left: 0;
 }
-}
+}   

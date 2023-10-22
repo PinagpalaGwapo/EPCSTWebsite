@@ -5,9 +5,9 @@
             <div class="logo">
                 <img src="../img/logo_plain.png" alt="logo" width="160px" height="160px">
             </div>
-            <div class="school">
-                <p class="school_name">Eastwoods Professional College</p>
-                <p class="school_name2">Science and Technology</p>
+            <div class="school-nav">
+                <p class="school-name-nav">Eastwoods Professional College</p>
+                <p class="school-name-nav2">Science and Technology</p>
             </div>
         </div>
         <div class="search">
