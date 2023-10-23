@@ -319,6 +319,9 @@ font-size: 18px;
     justify-content: space-between;
     width: 100%;
 }
+.home-background {
+    
+}
 
 .search-container input[type="text"] {
     display: none;
