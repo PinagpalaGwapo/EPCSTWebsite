@@ -12,4 +12,3 @@
         <p class="sunday">Sunday: CLOSED</p>
     </div>
 </section> 
->>>>>>> 2a28c63 (Added contact page)
