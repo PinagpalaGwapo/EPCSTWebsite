@@ -256,6 +256,17 @@ background: #CC1717;
 /* contact start */
 /* experimental pa lang */
 
+.contact {
+    background-image: url();
+    /* width: 100%; 
+    height: auto; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(35% 0%, 100% 0%, 100% 100%, 35% 100%, 50% 50%);
+    margin: 0px;
+    padding: 0px; */
+}
+
 .contact-info {
     flex-wrap: nowrap;
 
