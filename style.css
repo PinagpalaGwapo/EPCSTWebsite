@@ -253,6 +253,69 @@ background: #CC1717;
 }
 /* home end */
 
+/* contact start */
+/* experimental pa lang */
+
+.contact-info {
+    flex-wrap: nowrap;
+
+}
+
+.contact-title {
+    color: #396400;
+    font-size: 48px;
+    /*text-decoration: underline; */
+
+}
+
+.contact-card {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin: auto;
+    background-color: #7CB530E8;
+    width: 1171px;
+    /*height: 530px;
+     top: 323px;
+    left: 134px; */
+    border-radius: 10px;
+}
+    
+.address {
+    color: white;
+    font-size: 25px;
+}
+
+.contact-number {
+    color: white;
+    font-size: 25px;
+}
+
+.school-email {
+    color: white;
+    font-size: 25px;
+}
+
+.duration-operation {
+    color: white;
+    font-size: 25px;
+}
+.monday-fri {
+    color: white;
+    font-size: 25px;
+}
+
+.saturday {
+    color: white;
+    font-size: 25px;
+}
+
+.sunday {
+    color: white;
+    font-size: 25px;
+}
+
+/* contact end */
 
 /* Media query for mobile and tablet screens */
 @media (max-width: 1023px) {    
