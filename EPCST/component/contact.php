@@ -1,4 +1,5 @@
 <section id="contact">
+
     <div class="contact-info">
         <p class="contact-title">Contact Us</p>
     </div>
@@ -11,5 +12,4 @@
         <p class="saturday">Saturday: 8:00 am to 3:00 pm</p>
         <p class="sunday">Sunday: CLOSED</p>
     </div>
-    <img class="contact-background" src="../img/contact-page.background.jpg" alt="epcst building">
 </section> 
