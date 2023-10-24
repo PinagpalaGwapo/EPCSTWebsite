@@ -279,7 +279,7 @@ background: #CC1717;
     display: flex;
     line-height: 1.6;
     min-height: 50vh;
-    width: 60%;
+    width: 69%;
     max-width: 600px;
     place-content: center;
     align-content: center;
@@ -288,12 +288,12 @@ background: #CC1717;
     /*height: 530px;
      top: 323px;
     left: 134px; */
-    border-radius: 10px;
+    /*border-radius: 10px;*/
 }
 
-.iframe-container {
+/*.iframe-container {
     order: 1;
-}
+}*/
     
 .address {
     color: white;
