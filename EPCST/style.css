@@ -264,7 +264,7 @@ background: #CC1717;
     background-blend-mode: multiply;
     display: flex;
     flex-direction: column;
-    padding: 10%;
+    padding: 5%;
     padding-top: 2%;
 }
 
@@ -274,21 +274,15 @@ background: #CC1717;
 
 .contact-title {
     color: #396400;
+    margin-left: 20px;
     text-decoration: underline;
-    font-size: 48px;
+    text-decoration-thickness: 2.5px;
+    text-underline-offset: 0.2em;
+    font-size: 37px;
 }
 
 #contact {
     position: relative;
-}
-
-.wrapper {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.wrapper:focus {
-    outline: 0;
 }
 
 .contact-card {
@@ -296,33 +290,17 @@ background: #CC1717;
     padding: 4%;
     margin-top: 16px;
     justify-content: space-between;
-    /*position: absolute;
-    top: 50%;
-    left: 50;
-    transform: translate(-50%, -50%);*/
-    /* display: inline-block; */
-    /* margin: auto; */
-    /*line-height: 1.6; */
-    /*min-height: 50vh;*/
-    /* width: 400px; */
     border-radius: 6px;
-    /* position: relative; */
-    /*place-content: center;
-    align-content: center;
-    flex-direction: column;*/ 
     background-color: #7CB530E8;
-    /*height: 530px;
-     top: 323px;
-    left: 134px; */
-    /*border-radius: 10px;*/
 }
+
 .do-container {
     padding-left: 12%;
 }
 
 .contact-card p {
     color: #fff;
-    font-size: x-large;
+    font-size: 22px;
     line-height: 56px;
 }
 .messenger {
@@ -343,49 +321,10 @@ background: #CC1717;
     
 }
 
-/*.iframe-container {
-    order: 1;
-}*/
-
-/*
-.contact-card:nth-child(*) {
-    color:white;
-    font-size: 23px;
-} */
-/*
-.address {
-    color: white;
-    font-size: 25px;
+.map {
+    border-radius: 10px;
+    float: right;
 }
-
-.contact-number {
-    color: white;
-    font-size: 25px;
-}
-
-.school-email {
-    color: white;
-    font-size: 25px;
-}
-
-.duration-operation {
-    color: white;
-    font-size: 25px;
-}
-.monday-fri {
-    color: white;
-    font-size: 25px;
-}
-
-.saturday {
-    color: white;
-    font-size: 25px;
-}
-
-.sunday {
-    color: white;
-    font-size: 25px;
-}*/
 
 /* contact end */
 
