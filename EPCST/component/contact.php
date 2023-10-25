@@ -24,6 +24,6 @@
         
     </div>
     <div class="messenger">
-        <a href="https://www.facebook.com/EPCST/?_rdc=1&_rdr" target="_blank"><img src="../img/messenger-green.png" alt="messenger_contact" class="messenger-img"></a>
+        <a href="https://www.facebook.com/EPCST/?_rdc=1&_rdr" target="_blank"><img src="./img/messenger-green.png" alt="messenger_contact" class="messenger-img"></a>
     </div>
 </section> 
