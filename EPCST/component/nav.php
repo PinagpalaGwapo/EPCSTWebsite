@@ -3,7 +3,7 @@
     <div class="container">
         <div class="school_container">
             <div class="logo">
-                <img src="../img/logo_plain.png" alt="logo" width="160px" height="160px">
+                <img src="./img/logo_plain.png" alt="logo" width="160px" height="160px">
             </div>
             <div class="school-nav">
                 <p class="school-name-nav">Eastwoods Professional College</p>

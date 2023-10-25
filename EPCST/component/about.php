@@ -7,5 +7,5 @@
 
         </div>
     </div>
-    <img class="home-background" src="../img/home.jpg" alt="home">
+    <img class="home-background" src="./img/home.jpg" alt="home">
 </section>
