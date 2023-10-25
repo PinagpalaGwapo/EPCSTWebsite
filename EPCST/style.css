@@ -256,6 +256,57 @@ background: #CC1717;
 /* home end */
 
 /* contact start */
+
+
+/* KYLE*/
+
+#about{
+    background-image: url(./img/about.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+    
+    padding: 0%;
+    padding-top: 0%;
+}
+
+
+.white-column {
+    background-color: white;
+    width: 21.1vw;
+    height: 100vh; /* 100% of the viewport height */
+align-items: center;
+
+}
+.navigation {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.navigation li {
+    margin: 68px 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #659e19; /* Set the color you prefer */
+    display: block;
+    padding: 10px 20px;
+    background-color: #FFFFFF; /* Set the button background color */
+    border-radius: 5px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+
+/* KYLE */
+
 /* experimental pa lang */
 
 #contact{
