@@ -21,6 +21,7 @@ justify-content: space-between;
 background-color: #7cd902;
 width: 100%;
 height: 60px;
+
 }
 .logo {
 display: block;
@@ -390,6 +391,118 @@ iframe {
 }
 
 /* contact end */
+
+/* program start */
+.program-container {
+    display: flex;
+    flex-direction: column;
+}
+.program-text-container {
+    background-image: url(./img/section-program.png);
+    height: 25vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 60px;
+    font-size: x-large;
+}
+.program-text-container, h1 {
+    color: #fff;
+    font-style: italic;
+    font-family: Arimo;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+.program-container2 {
+    display: flex;
+    flex-direction: column;
+    
+}
+.program-container2, h2 {
+    color: #579504;
+    text-decoration: underline;
+    padding: 2%;
+    padding-left: 8%;
+    font-size: 38px;
+    display: flex;
+    width: 50%;
+}
+
+.slider-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.box-container {
+    display: flex;
+    transition: transform 0.3s;
+}
+
+.box {
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+    border: 12px solid #8bd926;
+    border-radius: 4%;
+    margin-right: 40px;
+    transition: transform 0.3s, box-shadow 0.3s, width 0.3s, height 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #3e6b04;
+    text-align: center;
+}
+
+p {
+    color: #3e6b04;
+}
+li {
+    color: #3e6b04;
+}
+
+.course {
+    padding-bottom: 20px;
+}
+.course-info {
+    font-size: 8px;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: justify;
+    line-height: 16px;
+}
+.box:hover .course {
+    display: none;
+}
+
+.box:last-child {
+    margin-right: 0;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    top: 90%;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.control-button {
+    color: #579504;
+    cursor: pointer;
+    font-size: 120px;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.control-button:hover {
+    color: #3c6703;
+}
+/* program end */
+
 
 /* Media query for mobile and tablet screens */
 @media (max-width: 1023px) {    
