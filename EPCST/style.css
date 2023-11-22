@@ -646,3 +646,111 @@ color: #fff;
 left: 0;
 }
 }   
+
+/* linkage start */
+/* Denver G. Cadungog */
+.linkage-container{
+    background-image: url(/EPCSTWebsite/EPCST/img/contact-page-background.jpg);
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.linkages{
+    text-decoration: underline;
+    text-align: justify;
+    font-size: 40px;
+    padding-top: 30px;
+    margin-left: 30px;
+    color: #3e6b04;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.primary-partners{
+    text-align: justify;
+    font-size: 30px;
+    color: #3e6b04;
+    margin-bottom: 10px;
+
+}
+.descriptions{
+    text-align: justify;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.secondary-partners{
+    text-align: justify;
+    font-size: 30px;
+    color: #3e6b04;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+.dashboard{
+    background-color:rgb(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgb (0, 0, 0 0.5);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    flex: 1 0 calc(33.33% - 30px);
+   
+    color: #000
+}
+.primary-dashboard{
+    background-color: #579504;
+    padding: 20px;
+    /* margin: 10px; */
+    border-radius: 8px;
+    flex: 1 0 calc(33.33% - 30px);  
+}
+.address, .university, .contact-details {
+    display: inline-block;
+    color: white;
+}
+.address{
+    margin-left: 20px;
+}
+.university, .contact-details{
+    margin-left: 600px;
+}
+.primary-dashboard2{
+    background-color: #ffffff;
+    padding: 20px;
+    /* margin: 10px; */
+    border-radius: 8px;
+    flex: 1 0 calc(33.33% - 30px);
+}
+.address2, .university2, .contact-details2 {
+    display: inline-block;
+}
+.address2{
+    margin-left: 10px;
+}
+.university2, .contact-details2{
+    margin-left: 500px;
+}
+.icon{
+    display: inline-block;
+    width: 50px;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .linkage-container {
+        height: auto; /* Adjust height as needed for smaller screens */
+    }
+
+    .linkages {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+    /* Adjust other styles as needed for smaller screens */
+    .university, .contact-details {
+        margin-left: 10px;
+    }
+
+    .university2, .contact-details2 {
+        margin-left: 300px; /* Adjust as needed */
+    }
+}
