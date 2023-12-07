@@ -1,11 +1,14 @@
-<!-- inludes for reusability, para di na natin ulitin to -->
-<?php include_once 'component/header.php' ?>
-<?php include_once 'component/nav.php' ?>
-
-<!-- This Where will put the HOME, ABOUT, ETC Component: Ditong page nalang babagohin 
-natin tas sa component folder natin lalagay yong file -->
 <?php 
-$page = isset($_GET['page']) ? $_GET['page'] : 'home';
+$page = isset($_GET['page']) ? $_GET['page'] : 'landing';
+// <!-- includes for reusability, para di na natin ulitin to -->
+if ($page !== 'landing') {
+    include_once 'component/header.php';
+    include_once 'component/nav.php';
+}
+
+
+// <!-- This Where will put the HOME, ABOUT, ETC Component: Ditong page nalang babagohin 
+// natin tas sa component folder natin lalagay yong file -->
 if ($page === 'home') {
     include 'component/home.php';
 } elseif ($page === 'about') {
@@ -18,9 +21,12 @@ if ($page === 'home') {
     include 'component/linkage.php';
 } elseif ($page === 'contact') {
     include 'component/contact.php';
+} elseif ($page === 'landing') {
+    include 'component/landing.php';
 } else {
     echo '404 page not found.';
 }
-?>
 
-<?php include_once 'component/footer.php' ?>
+// Include the footer for all pages except the landing page
+include_once 'component/footer.php';
+?>
