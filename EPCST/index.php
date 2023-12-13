@@ -23,6 +23,8 @@ if ($page === 'home') {
     include 'component/contact.php';
 } elseif ($page === 'landing') {
     include 'component/landing.php';
+} elseif ($page === 'newsEvents') {
+    include 'component/newsEvents.php';
 } else {
     echo '404 page not found.';
 }
