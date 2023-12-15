@@ -329,7 +329,6 @@ align-items: center;
 .contact-title {
     color: #396400;
     margin-top: 25px;
-    margin-left: 70px;
     text-decoration: underline;
     text-decoration-thickness: 2.5px;
     text-underline-offset: 0.2em;
@@ -999,3 +998,43 @@ li {
     margin-left: 40px;
     margin-bottom: 10px;
 }
+
+/* News and Events */
+
+.News-Events {
+
+}
+
+.articles {
+    background-image: url(./img/News-Events\(temporary\ measure\).png);
+    overflow: hidden;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 1211px;
+    height: 620px;
+    display: block;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    padding: 5%;
+    padding-top: 2%;
+}
+
+.News-events-title {
+    color: #4A8100;
+    margin-top: 25px;
+    margin-left: 64px;
+    text-decoration: underline;
+    text-decoration-thickness: 2.5px;
+    text-underline-offset: 0.2em;
+    font-size: 37px;
+}
+/*
+.article-header {
+    width: 1192px;
+    height: 280px;
+    background: red;
+    border-style: solid;
+    border-color: #305300;
+}
+*/
