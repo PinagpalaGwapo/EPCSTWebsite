@@ -16,11 +16,11 @@
 </div>
     <script>
     function changeBackgroundHistory() {
-        document.getElementById('about').style.backgroundImage = "url('./img/abouttt.jpg')";
+        document.getElementById('about').style.backgroundImage = "url('./img/aboutttt.jpg')";
     }
 
     function changeBackgroundMission() {
-        document.getElementById('about').style.backgroundImage = "url('./img/missionn.jpg')";
+        document.getElementById('about').style.backgroundImage = "url('./img/missionnn.jpg')";
     }
 
     function changeBackgroundVision() {
@@ -28,11 +28,11 @@
     }
 
     function changeBackgroundPhilosophy() {
-        document.getElementById('about').style.backgroundImage = "url('./img/philosophyy.jpg')";
+        document.getElementById('about').style.backgroundImage = "url('./img/philosophyyy.jpg')";
     }
 
     function changeBackgroundFacilities() {
-        document.getElementById('about').style.backgroundImage = "url('./img/facilityy.jpg')";
+        document.getElementById('about').style.backgroundImage = "url('./img/facilityyy.jpg')";
     }
 
     function changeBackgroundDepartments() {
