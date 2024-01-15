@@ -15,28 +15,28 @@
         </ul>
 </div>
     <script>
- function changeBackgroundHistory() {
-        document.body.style.backgroundImage = "url('./img/aboutt.jpg')";
+    function changeBackgroundHistory() {
+        document.getElementById('about').style.backgroundImage = "url('./img/abouttt.jpg')";
     }
 
     function changeBackgroundMission() {
-        document.body.style.backgroundImage = "url('./img/mission.jpg')";
+        document.getElementById('about').style.backgroundImage = "url('./img/missionn.jpg')";
     }
 
     function changeBackgroundVision() {
-        document.body.style.backgroundImage = "url('./img/vision.jpg')";
+        document.getElementById('about').style.backgroundImage = "url('./img/visionn.jpg')";
     }
 
     function changeBackgroundPhilosophy() {
-        document.body.style.backgroundImage = "url('./img/philosophy.jpg')";
+        document.getElementById('about').style.backgroundImage = "url('./img/philosophyy.jpg')";
     }
 
     function changeBackgroundFacilities() {
-        document.body.style.backgroundImage = "url('./img/facility.jpg')";
+        document.getElementById('about').style.backgroundImage = "url('./img/facilityy.jpg')";
     }
 
     function changeBackgroundDepartments() {
-        document.body.style.backgroundImage = "url('./img/department.jpg')";
+        document.getElementById('about').style.backgroundImage = "url('./img/departmentt.jpg')";
     }
 </script>
 </html>
