@@ -32,7 +32,6 @@
     <li><a href="?page=program">PROGRAM</a></li>
     <li><a href="?page=admission">ADMISSION</a></li>
     <li><a href="?page=linkage">LINKAGE</a></li>
-    <li><a href="?page=news-events">NEWS AND EVENTS</a></li>
     <li><a href="?page=contact">CONTACT US</a></li>
     </ul>
     
