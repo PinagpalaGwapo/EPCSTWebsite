@@ -58,6 +58,7 @@ font-size: 20px;
 display: flex;
 align-items: center;
 margin-right: 30px;
+
 }
 
 .search-container {
@@ -65,6 +66,7 @@ display: flex;
 background: #fff;
 border-radius: 6px;
 padding: 5px;
+margin-right: 12px;
 }
 
 .search-container input[type="text"] {
@@ -1048,7 +1050,6 @@ left: 0;
     }
 }
 
-<<<<<<< HEAD
 /* calendar */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
 
@@ -1209,209 +1210,59 @@ left: 0;
   border: 1px solid transparent;
   pointer-events: none;
 }
-=======
 
-/*Admission Page Css 
-/*Denver G Cadungog*/
-#body-admission {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+
+/* login button */
+/* CSS */
+.login {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.login a {
+  color: #fff;
 }
 
-/* .cntnr1 {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: #fff url('/EPCST/img/admission.jpg') no-repeat center center;
-    background-size: cover;
-    border: 1px solid #ccc;
-    color: #fff;
-} */
-#container1 {
-    position: relative;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 1px solid #ccc;
-    color: #fff;
-    object-position: 100%;
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
 }
 
-#container1::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(70, 117, 48, 0.6); /* Adjust the color and opacity as needed */
-    z-index: -1; /* Ensure the overlay is behind the content */
+.button-3:hover {
+  background-color: #2c974b;
 }
 
-#container1::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('/EPCST/img/admission.jpg') no-repeat center center;
-    background-size: cover;
-    z-index: -2; /* Ensure the background image is behind the overlay */
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
 }
 
-
-#admission-paragraph {
-    font-family: "Your Desired Font", sans-serif; /* Replace with your desired font */
-    font-size: 18px; /* Adjust the font size as needed */
-    line-height: 1.5; /* Adjust the line height for better readability */
-    width: 70%; /* Limit the maximum width of the paragraph */
-    margin-top: 20px; /* Add margin at the top for spacing */
-    color: #fff; /* Text color */
-    text-align: justify;
-}
-#admission-paragraph p {
-    font-size: 30px; /* Adjust the font size as needed */
-    margin-bottom: 20px;
-    text-align: center;
-    color: #ffff;
-}
-#container2 {
-    order: 2; /* Place the second container at the bottom */
-    display: flex;
-    justify-content: center;
-
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
 }
 
-.cntnr2 {
-    flex-grow: 1;
-    margin: 10px;
-    color: #fff;
+.button-3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
-
-.admission p {
-    text-align: left;
-    margin-left: 20px;
-    color: #406b07;
-    font-size: 50px;
-    text-decoration: underline;
-
-
-}
-
-.custom-navigation {
-    text-align: left;
-    background-color: #9c9999;
-    padding: 10px;
-}
-
-.admission-border-box {
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid #333;
-    border-radius: 0 0 8px 8px;
-    min-width: 150vh;
-    min-height: 250px;
-    background-color: rgb(159, 199, 99);
-}
-
-.custom-navigation h6 {
-    position: relative;
-    text-decoration: none;
-    color: #333;
-    padding: 10px 20px;
-    margin: 0;
-    font-weight: bold;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    font-size: large;
-}
-
-.custom-navigation h6:hover {
-    color: rgb(255, 255, 255);
-}
-
-.custom-navigation h6.active {
-    color: rgb(45, 126, 42);
-}
-
-section {
-    padding: 15px;
-
-}
-
-p {
-    color: #000000;
-}
-
-
-.click {
-    display: inline-block;
-}
-
-ol {
-    list-style-type: decimal;
-    padding-left: 40px;
-}
-
-li {
-    color: #000000;
-    margin-bottom: 10px;
-}
-.custom-navigation{
-}
-#newstudent,#oldstudent{
-    font-size: 20px;
-    margin-left: 40px;
-    margin-bottom: 10px;
-}
-
-/* News and Events */
-
-.News-Events {
-
-}
-
-.articles {
-    background-image: url(./img/News-Events\(temporary\ measure\).png);
-    overflow: hidden;
-    justify-content: space-between;
-    max-width: 100%;
-    width: 1211px;
-    height: 620px;
-    display: block;
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
-    padding: 5%;
-    padding-top: 2%;
-}
-
-.News-events-title {
-    color: #4A8100;
-    margin-top: 25px;
-    margin-left: 64px;
-    text-decoration: underline;
-    text-decoration-thickness: 2.5px;
-    text-underline-offset: 0.2em;
-    font-size: 37px;
-}
-/*
-.article-header {
-    width: 1192px;
-    height: 280px;
-    background: red;
-    border-style: solid;
-    border-color: #305300;
-}
-*/
->>>>>>> 6502578194d628218b1f20123a00548fc9839e5f

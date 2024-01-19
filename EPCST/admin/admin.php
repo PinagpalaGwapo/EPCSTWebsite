@@ -118,7 +118,9 @@
 "https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
 							class="nav-img"
 							alt="logout"> 
-						<h3>Logout</h3> 
+						<h3>
+							<a href="logout.php">Logout</a>
+						</h3> 
 					</div> 
 
 				</div> 
