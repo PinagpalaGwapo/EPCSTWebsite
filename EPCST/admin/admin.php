@@ -8,7 +8,7 @@
 	<meta name="viewport"
 		content="width=device-width, 
 				initial-scale=1.0"> 
-	<title>GeeksForGeeks</title> 
+	<title>EPCST</title> 
 	<link rel="stylesheet"
 		href="./admin.css"> 
 </head> 
@@ -32,7 +32,7 @@
 				placeholder="Search"> 
 			<div class="searchbtn"> 
 			<img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+"./search.png"
 					class="icn srchicn"
 					alt="search-icon"> 
 			</div> 
@@ -135,7 +135,7 @@
 					placeholder="Search"> 
 				<div class="searchbtn"> 
 				<img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+"./search.png"
 						class="icn srchicn"
 						alt="search-button"> 
 				</div> 
@@ -150,7 +150,7 @@
 					</div> 
 
 					<img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(31).png"
+"./view.png"
 						alt="Views"> 
 				</div> 
 
@@ -161,7 +161,7 @@
 					</div> 
 
 					<img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210185030/14.png"
+"./like.png"
 						alt="likes"> 
 				</div> 
 
@@ -172,7 +172,7 @@
 					</div> 
 
 					<img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(32).png"
+"./chat.png"
 						alt="comments"> 
 				</div> 
 
@@ -183,7 +183,7 @@
 					</div> 
 
 					<img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210185029/13.png" alt="published"> 
+"./check.png" alt="published"> 
 				</div> 
 			</div> 
 
