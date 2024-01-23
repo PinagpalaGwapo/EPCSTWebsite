@@ -82,11 +82,6 @@
 <body>
     <div class="container">
         <h1>Login</h1>
-        <?php if ($error != ''): ?>
-            <div class="error">
-                <p><?php echo $error; ?></p>
-            </div>
-        <?php endif; ?>
         <form action="check.php" method="post">
             <div class="input-field">
                 <label for="username">Username</label>
